@@ -7,6 +7,8 @@
 
   <script type="text/javascript" src="@routes.Application.javascriptRoutes"></script>
 
+<h2>Exemple d'ajax</h2>
+
   <input type='text' id='num1'/>
   <input type='text' id='num2'/>
   </br>
@@ -14,6 +16,14 @@
   <input type='button' value='-' id='minusBtn' />
   <br />
   <div id="result" />
+
+<h2>Exemple de formulaire</h2>
+
+@helper.form(action = routes.Application.submit()) {
+    <input type="text" name="query" />
+    <input type="submit" />
+}
+
 
   <script type="text/javascript" charset="utf-8">
     var plus = function() {
