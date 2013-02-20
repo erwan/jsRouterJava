@@ -29,15 +29,4 @@ public class Application extends Controller {
         return ok("Requete: " + form.get("query"));
     }
 
-    public static Result javascriptRoutes() {
-        response().setContentType("text/javascript");
-        return ok(
-            Routes.javascriptRouter("jsRoutes",
-                // Routes
-                controllers.routes.javascript.Application.plus(),
-                controllers.routes.javascript.Application.minus()
-            )
-        );
-    }
-
 }

@@ -5,7 +5,10 @@
 
 @main("Welcome to Play 2.0") {
 
-  <script type="text/javascript" src="@routes.Application.javascriptRoutes"></script>
+@tags.jsRouter("jsRoutes",
+    controllers.routes.javascript.Application.plus,
+    controllers.routes.javascript.Application.minus
+)
 
 <h2>Exemple d'ajax</h2>
 
